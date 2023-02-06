@@ -1,0 +1,5 @@
+---
+- hosts: group
+  tasks:
+    - name: "first ansible"
+      debug: msg="Hello world!!!!!"
