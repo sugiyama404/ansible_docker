@@ -2,13 +2,13 @@
 - hosts: group
   become: yes
   tasks:
-    - name: "Install Nginx"
+    - name: "install nginx"
       ansible.builtin.apt:
         name: nginx
         state: latest
         cache_valid_time: 86400
         update_cache: yes
-    - name: "Start Nginx"
+    - name: "start nginx"
       service:
         name: nginx
         state: started
